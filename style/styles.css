@@ -31,8 +31,8 @@ button {
     --fs-p: clamp(0.9rem, 0.8rem + 0.3vw, 1.5rem);
     --fs-button: clamp(0.7rem, 0.8rem + 0.3vw, 1.2rem);
     --fs-h4: clamp(0.8rem, 0.8rem + 0.3vw, 1.5rem);
-    --fs-h3: clamp(0.6rem, 1.1rem + 1vw, 1.25rem);
-    --fs-h2: clamp(0.7rem, 1.1rem + 2vw, 1.7rem);
+    --fs-h3: clamp(0.5rem, 1rem + 1vw, 1.25rem);
+    --fs-h2: clamp(0.5rem, 1rem + 2vw, 1.7rem);
     --fs-h1: clamp(1.25rem, 1.6rem + 3.5vw, 2rem);
 
 
@@ -78,20 +78,6 @@ button {
     src : url("../assets/fonts/ReemKufi-Bold.ttf");
     font-display: swap;
 }
-
-
-.size-box {
-    position: fixed;
-    padding: 8px 10px;
-    font-size: 1.5rem;
-    bottom: 20px;
-    right: 20px;
-    color: #fff;
-    background: #3e3c3c;
-    border-radius: 999px;
-    font-weight: 800;
-}
-
 
 /* <<< Website Design >>> */
 body {
@@ -603,7 +589,7 @@ text-bg {
     align-items: center;
 }
 .section-title {
-    
+    width: 90%;
 }
 .section-text {
     width: 90%;
