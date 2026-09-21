@@ -367,13 +367,8 @@ body {
     color: var(--button-bg);
     border: 1px solid rgba(187,222,251,0.9);
 }
-mobile-icon {
-    fill: none;
-    stroke: currentcolor;
-    stroke-width: 2;
-}
 .st0 {
-    color:var(--button-bg)
+    color:var(--button-bg);
 }
 
 
@@ -429,11 +424,20 @@ mobile-icon {
 .hero-section-container {
     width: 100%;
     min-height: 100svh;
+    /*
     background: url("../assets/images/delta-hero-carpet-washing.webp");
     background-repeat: no-repeat;
     background-position: top left;
     background-size: cover;
+    */
     position: relative;
+}
+.hero-section-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top left;
 }
 .hero-section-overlay {
     position: absolute;
