@@ -459,6 +459,7 @@ body {
     text-align: center;
     color: #fff;
     transform: scale(0.9);
+    padding-top: 50px;
 }
 .hero-section-text-bg {
     font-size: 0.8rem;
@@ -692,6 +693,7 @@ text-bg {
 }
 .video-box {
     width: 100%;
+    height: 200px;
     border-radius: 16px;
     overflow: hidden;
     box-shadow: 0 0 10px var(--card-shadow);
@@ -699,6 +701,8 @@ text-bg {
 .video-box video {
     display: block;
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* <<< Why Delta Section Styles >>> */
@@ -1116,10 +1120,14 @@ header, button, .mobile-menu,
     /* <<<Hero Section >>> */
     .hero-section-buttons {
         gap: 18px;
+        flex-wrap: nowrap;
     }
     /* <<< before After Section >>> */
     .swiper {
         height: 350px;
+    }
+    .video-box {
+        height: 220px;
     }
     /*  */
     .why-us-card {
@@ -1168,7 +1176,10 @@ header, button, .mobile-menu,
         margin-top: -45px;
         box-shadow: 0 0 15px var(--card-shadow);
     }
-    
+
+    .video-box {
+        height: 260px;
+    }
 }
 
 /* <<< Responsive in size 588px >>> */
@@ -1183,7 +1194,9 @@ header, button, .mobile-menu,
         width: 85%;
     }
    
-    
+    .video-box {
+        height: 280px;
+    }
 }
 
 /* <<< Responsive in size 768px >>> */
@@ -1202,6 +1215,9 @@ header, button, .mobile-menu,
     .swiper, .video-box {
         width: 75%;
     }
+    .video-box {
+        height: 300px;
+    }
     /*  */
     .contact-us-section-content     {
         grid-column-gap: 30px;
@@ -1212,6 +1228,21 @@ header, button, .mobile-menu,
         grid-template-columns: repeat(2,1fr);
         grid-row-gap: 50px;
         grid-column-gap: 25px;
+    }
+    .addres-card {
+        width: 100%;
+        grid-column: span 2;
+        flex-direction: row;
+    }
+    .addres-card-content {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        flex-direction: column;
+    }
+    .map-container {
+        width: 50%;
     }
 }
 
@@ -1232,23 +1263,29 @@ header, button, .mobile-menu,
     .swiper, .video-box {
         width: 65%;
     }
+    .video-box {
+        height: 350px;
+    }
     /*  */
     .why-us-section-content {
         display: grid;
         grid-template-columns: repeat(2,1fr);
-        grid-row-gap: 60px;
-        grid-column-gap: 40px;
+        grid-row-gap: 40px;
+        grid-column-gap: 35px;
     }
     .why-us-section-content::after {
         display: none;
+    }
+    .why-us-card {
+        width: 100%;
     }
     .why-us-card-icon-box {
         margin-top: 0;
     }
     /*  */
     .contact-us-section-content     {
-        grid-row-gap: 60px;
-        grid-column-gap: 40px;
+        grid-row-gap: 40px;
+        grid-column-gap: 35px;
     }
     /*  */
     .faq-section-content {
@@ -1268,6 +1305,9 @@ header, button, .mobile-menu,
     /*  */
     .services-section-content {
         grid-template-columns: repeat(4,1fr);
+    }
+    .service-card:nth-child(4) {
+        display: none;
     }
     /*  */
     .footer-content {
