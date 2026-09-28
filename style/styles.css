@@ -179,6 +179,20 @@ body {
 .whatsapp-icon, .phone-icon {
     display: none;
 }
+.phone-btn {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 10px;
+    padding: 8px 20px;
+    border-radius: 9999px;
+    background: var(--button-bg);
+    color: #fff;
+}
+.header-phone-number {
+    
+    font-weight: 600;
+}
 .menu-btn {
     display: flex;
     align-items: center;
@@ -1251,6 +1265,9 @@ header, button, .mobile-menu,
     .map-container {
         width: 50%;
     }
+    .footer-logo {
+        width: 40%;
+    }
 }
 
 /* <<< Responsive in size 1024px >>> */
@@ -1302,8 +1319,15 @@ header, button, .mobile-menu,
         grid-row-gap: 40px;
     }
     /*  */
+    .footer-bio-delta {
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+    .footer-bio-delta-content {
+        width: 70%;
+    }
     .footer-logo {
-        max-width: 450px;
+        width: 30%;
     }
 }
 
@@ -1317,15 +1341,27 @@ header, button, .mobile-menu,
         display: none;
     }
     /*  */
-    .footer-content {
+    footer-content {
         gap: 140px;
     }
-    .footer-menu-content {
+    .footer-content {
+        flex-direction: row;
+    }
+    .footer-bio-delta {
+        flex-direction: column;
+    }
+    .footer-logo {
+        width: 50%;
+    }
+    footer-menu-content {
         flex-direction: row;
         justify-content: space-between;
     }
+    .footer-menu-content {
+        
+    }
     .footer-nav, .footer-contacts {
-        width: 50%;
+        width: 100%;
     }
     .phone-number-box {
         gap: 40px;
