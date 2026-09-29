@@ -180,18 +180,16 @@ body {
     display: none;
 }
 .phone-btn {
+    width: 30px;
+    height: 30px;
+    background: none;
+    color: inherit;
     display: flex;
     align-items: center;
-    flex-direction: row-reverse;
-    gap: 10px;
-    padding: 8px 20px;
-    border-radius: 9999px;
-    background: var(--button-bg);
-    color: #fff;
+    justify-content: center;
 }
 .header-phone-number {
-    
-    font-weight: 600;
+    display: none;
 }
 .menu-btn {
     display: flex;
@@ -453,7 +451,7 @@ body {
     object-fit: cover;
     object-position: top left;
 }
-.hero-section-overlay {
+hero-section-overlay {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -462,6 +460,16 @@ body {
     justify-content: center;
     background: rgba(0,0,0,0.4);
     backdrop-filter: blur(3px);
+}
+.hero-section-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.6),rgba(0,0,0,0.4));
+    backdrop-filter: blur(1px);
 }
 .hero-section-content {
     width: 85%;
@@ -1275,6 +1283,20 @@ header, button, .mobile-menu,
     /* <<< Header >>> */
     .menu-btn {
         display: none;
+    }
+    .phone-btn {
+        width: auto;
+        height: auto;
+        flex-direction: row-reverse;
+        gap: 10px;
+        padding: 8px 20px;
+        border-radius: 9999px;
+        background: var(--button-bg);
+        color: #fff;
+    }
+    .header-phone-number {
+        font-weight: 600;
+        display: block;
     }
     .nav-menu {
         display: block;
