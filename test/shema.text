@@ -1,0 +1,28 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "قالیشویی دلتا زنجان",
+  "image": "https://deltazanjan.ir/assets/images/Delta_Logo.webp",
+  "url": "https://deltazanjan.ir",
+  "telephone": "09214220296",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "جاده بیجار، جنب راهدارخانه پاپائی",
+    "addressLocality": "زنجان",
+    "addressRegion": "زنجان",
+    "addressCountry": "IR"
+  },
+  "priceRange": "متوسط",
+  "openingHours": "Mo-Su 07:00-17:00",
+  "description": "شستشوی تخصصی انواع فرش ماشینی و دستباف با دستگاه‌های تمام‌اتوماتیک دلتا، لکه‌گیری، رفوگری و ضمانت کیفیت در زنجان"
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "36.6736",
+    "longitude": "48.4787"
+  },
+  "sameAs": [
+    "https://www.instagram.com/deltazanjan?igsi=OXVlbW1sM3E2dm4y"
+  ]
+}
+    </script>

@@ -114,6 +114,7 @@ faqItems.forEach(item => {
     faqItems.forEach(i => {
       if (i !== item) {
         i.classList.remove("faq-open");
+        i.querySelector(".faq-icon-box").classList.remove("faq--icon");
       }
     });
 

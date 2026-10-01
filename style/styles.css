@@ -17,7 +17,10 @@ ul {
 }
 img {
     width: 100%;
+    height: 100%;
     display: block;
+    object-fit: cover;
+    object-position: center;
 }
 html {
     scroll-behavior: smooth;
@@ -228,7 +231,7 @@ body {
 }
 .logo-container .logo-img {
     width: 80px;
-    filter: drop-shadow(0 0 5px rgba(0,0,0,0.3));
+    filter: drop-shadow(0 0 5px rgba(0,0,0,0.2));
 }
 .logo-container .carpet-washing-name {
     font-size: 1.5rem;
@@ -236,9 +239,6 @@ body {
 }
 .mobile-nav-menu {
     overflow-y: scroll;
-}
-.mobile-menu-list {
-    
 }
 .mobile-menu-list li {
     padding-inline-start: 15px;
@@ -379,9 +379,6 @@ body {
     color: var(--button-bg);
     border: 1px solid rgba(187,222,251,0.9);
 }
-.st0 {
-    color:var(--button-bg);
-}
 
 
 /* <<< Go Up Button Styles >>> */
@@ -436,12 +433,6 @@ body {
 .hero-section-container {
     width: 100%;
     min-height: 100svh;
-    /*
-    background: url("../assets/images/delta-hero-carpet-washing.webp");
-    background-repeat: no-repeat;
-    background-position: top left;
-    background-size: cover;
-    */
     position: relative;
 }
 .hero-section-bg {
@@ -519,7 +510,6 @@ hero-section-overlay {
     backdrop-filter: blur(2px);
     box-shadow: 0 0 10px rgba(0,0,0,0.3), 0 0 18px rgba(255,255,255,0.4) inset;
     transform: scale(0.95);
-    
 }
 .hero-section-buttons {
     display: flex;
@@ -587,15 +577,6 @@ hero-section-overlay {
     align-items: center;
     text-align: center;
 }
-text-bg {
-    font-size: 0.83rem;
-    font-weight: 600;
-    padding: 8px 25px;
-    border-radius: 9999px;
-    border: 1px solid rgba(13,71,161,0.3);
-    background: rgba(13,71,161,0.2);
-    color: rgba(0,0,0,0.9);
-}
 .text-bg {
     display: inline-block;
     font-size: 0.83rem;
@@ -625,9 +606,6 @@ text-bg {
     gap: 25px;
     flex-direction: column;
     align-items: center;
-}
-.section-title {
-    
 }
 .section-text {
     width: 90%;
@@ -671,11 +649,6 @@ text-bg {
 
 
 /* <<< before After Section Styles >>> */
-/*
-.before-after-section-container {
-    background: rgba(187,222,251,0.4);
-}
-*/
 .before-after-section-content-1 {
     width: 85%;
     display: flex;
@@ -772,7 +745,7 @@ text-bg {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    border: 2px solid blue;
+    border: 2.5px solid blue;
     background: #fff;
     overflow: hidden;
     margin-top: -55px;
@@ -787,11 +760,6 @@ text-bg {
 }
 
 /* <<< Contact Us Section Styles >>> */
-/*
-.contact-us-section-container {
-    background: rgba(187,222,251,0.4);
-}
-*/
 .contact-us-section-content {
     width: 85%;
     display: flex;
@@ -829,6 +797,29 @@ text-bg {
 }
 .contact-us-card-text {
     opacity: 0.8;
+    display: block;
+}
+.working-hours-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0;
+    flex-direction: column;
+}
+.working-hours {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 0.85rem;
+    opacity: 0.8;
+    padding: 8px 10px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.working-hours:nth-child(2) {
+    border-bottom: none;
 }
 .contact-us-phone-number {
     color: var(--button-bg);
@@ -848,9 +839,6 @@ text-bg {
 }
 
 /* <<< FAQ Section Styles >>> */
-.faq-section-container {
-    
-}
 .faq-section-content {
     width: 85%;
     display: flex;
@@ -935,9 +923,6 @@ text-bg {
     font-family: "ReemKufi-Bold";
     color: #fff;
 }
-.footer-bio-delta-text {
-    
-}
 .footer-menu-content {
     width: 100%;
     display: flex;
@@ -971,14 +956,8 @@ text-bg {
     box-shadow: 0 0 10px var(--card-shadow), 0 0 10px var(--button-bg) inset;
     transition: all 0.5s;
 }
-.footer-nav-list li a {
-    
-}
 .footer-contacts {
     align-items: center;
-    
-}
-.footer-contacts-title {
     
 }
 .footer-contacts-content {
@@ -1023,9 +1002,7 @@ text-bg {
     font-weight: 600;
     opacity: 0.7;
 }
-.maker {
-    
-}
+
 
 /* <<< Enable pointers on buttons and icons >>> */
 button, svg {
@@ -1167,9 +1144,6 @@ header, button, .mobile-menu,
         padding-bottom: 30px;
     }
     /* <<< Footer >>> */
-    .footer-menu-content {
-        
-    }
 }
 
 /* <<< Responsive in size 480px >>> */
@@ -1334,11 +1308,22 @@ header, button, .mobile-menu,
         grid-column-gap: 35px;
     }
     /*  */
-    .faq-section-content {
+    faq-section-content {
         display: grid;
         grid-template-columns: repeat(2,1fr);
         grid-column-gap: 35px;
         grid-row-gap: 40px;
+    }
+    .faq-section-content {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 35px;
+        flex-wrap: wrap;
+    }
+    .faq-card {
+        width: 40%;
     }
     /*  */
     .footer-bio-delta {
@@ -1378,9 +1363,6 @@ header, button, .mobile-menu,
     footer-menu-content {
         flex-direction: row;
         justify-content: space-between;
-    }
-    .footer-menu-content {
-        
     }
     .footer-nav, .footer-contacts {
         width: 100%;
